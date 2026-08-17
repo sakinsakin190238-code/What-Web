@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Studio | Immersive Dark Luxury</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    
+    <!-- External CSS link -->
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        gold: '#D4AF37',
+                        matte: '#0A0A0A',
+                        cardBg: '#121212'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-matte text-gray-200 font-sans antialiased overflow-x-hidden">
+
+    <!-- Ambient Cursor Glow -->
+    <div id="cursor-glow"></div>
+
+    <!-- Navigation -->
+    <header class="fixed top-0 w-full z-50 backdrop-blur-md border-b border-white/5 bg-matte/70">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="font-serif text-2xl font-bold tracking-widest text-white">APEX<span class="text-gold">.</span></a>
+            <nav class="hidden md:flex space-x-8 text-sm tracking-wider uppercase font-medium">
+                <a href="#services" class="hover:text-gold transition-colors">Services</a>
+                <a href="#portfolio" class="hover:text-gold transition-colors">Portfolio</a>
+                <a href="#contact" class="hover:text-gold transition-colors">Contact</a>
+            </nav>
+            <button class="border border-gold text-gold px-6 py-2 text-xs uppercase tracking-widest rounded-full hover:bg-gold hover:text-matte transition-all duration-300 font-bold">Start Project</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center px-6 relative overflow-hidden">
+        <div class="text-center z-10">
+            <span class="text-gold uppercase tracking-[0.4em] text-[10px] font-bold block mb-6 reveal">Premium Digital Experience</span>
+            <h1 class="font-serif text-6xl md:text-9xl text-white font-medium leading-tight mb-8 reveal">
+                Design with <br><span class="italic text-gold font-normal">Soul.</span>
+            </h1>
+            <p class="text-gray-400 max-w-lg mx-auto text-sm md:text-base mb-10 font-light leading-relaxed reveal">
+                We bridge the gap between human emotion and digital precision. High-end solutions for ambitious brands.
+            </p>
+            <div class="reveal">
+                <a href="#portfolio" class="bg-white text-black font-bold px-10 py-4 rounded-full hover:bg-gold transition-all duration-500 uppercase text-[10px] tracking-widest">Explore Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bento Services -->
+    <section id="services" class="py-32 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-cardBg p-10 rounded-3xl border border-white/5 md:col-span-2 reveal">
+                <h3 class="font-serif text-3xl text-gold mb-4">Strategic Design</h3>
+                <p class="text-gray-400 font-light">Creating digital ecosystems that don't just look pretty, but perform at the highest level of efficiency.</p>
+            </div>
+            <div class="bg-gold p-10 rounded-3xl text-black reveal">
+                <h3 class="font-serif text-3xl font-bold mb-4">Branding</h3>
+                <p class="font-medium opacity-80">Developing unique visual languages for the next generation of startups.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="py-20 border-t border-white/5 text-center">
+        <p class="text-gray-500 text-[10px] tracking-[0.5em] uppercase">© 2026 Apex Studio - Built for Excellence</p>
+    </footer>
+
+    <!-- External JS link -->
+    <script src="script.js"></script>
+</body>
+</html>
